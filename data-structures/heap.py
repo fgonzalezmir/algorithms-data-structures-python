@@ -1,7 +1,7 @@
 
 class Heap(object):
 
-	HEAP_SIZE = 10
+	HEAP_SIZE = 10 # Maximum capacity of the HEAP
 	
 	def __init__(self):
 		self.heap = [0]*Heap.HEAP_SIZE;
