@@ -25,7 +25,7 @@ class BreadthFirstSearch(object):
 					n.visited = True;
 					queue.append(n);
 					
-node1 = Node("A");
+node1 = Node("A"); 
 node2 = Node("B");
 node3 = Node("C");
 node4 = Node("D");
