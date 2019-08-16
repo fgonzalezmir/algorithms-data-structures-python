@@ -1,10 +1,12 @@
 
+# node in the graph
 class Vertex(object):
 
 	def __init__(self, name):
 		self.name = name;
 		self.node = None; # !!!!
-		
+
+# node in the disjoint set	 --> union vertex
 class Node(object):
 
 	def __init__(self, height, nodeId, parentNode):
@@ -36,7 +38,7 @@ class DisjointSet(object):
 		self.setCount = 0;
 		self.makeSets(vertexList);
 		
-	def find(self, node):
+	def find(self, node):  # using path compression
 	
 		currentNode = node;
 		
@@ -46,6 +48,7 @@ class DisjointSet(object):
 		root = currentNode;
 		currentNode = node;
 		
+      # path compression
 		while currentNode is not root:
 			temp = currentNode.parentNode;
 			currentNode.parentNode = root;

@@ -17,7 +17,7 @@ class Node(object):
 		self.adjacenciesList = [];
 		self.minDistance = sys.maxsize;
 		
-	def __cmp__(self, otherVertex):  # comparator operator  -> override base class
+	def __cmp__(self, otherVertex):  # comparator operator  -> override base class 
 		return self.cmp(self.minDistance, otherVertex.minDistance);
 		
 	def __lt__(self, other):    # less than operator  -> override base class
