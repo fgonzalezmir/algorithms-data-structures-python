@@ -102,3 +102,10 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# Ignore jupyter checkpints
+**/.ipynb_checkpoints/
+**/.vscode/
+**/.idea/
+*.cfg
+**/__pycache__/
